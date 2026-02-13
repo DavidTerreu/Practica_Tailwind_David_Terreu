@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practica-tailwind-david-terreu</title>
+  </head>
+  <body class="bg-fuchsia-900">
+
+    <header>
+      <nav aria-label="Global" class="mx-auto flex max-w-8xl items-center justify-between p-6">
+        <div class="flex lg:flex-1">
+          <a href="./index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img src="./img/Logo-Morkull-Ragasts-Rage.png" class="h-20 drop-shadow-lg drop-shadow-fuchsia-500" />
+          </a>
+        </div>
+
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6 text-white">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="./caracteristicas.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Características</a>
+          <a href="./disastergames.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Sobre Disaster Games</a>
+          <a href="./comprar.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Comprar</a>
+        </div>
+
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+      </nav>
+
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-black/50 lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-fuchsia-900 p-6 sm:max-w-sm ring-1 ring-white/10">
+              <div class="flex items-center justify-between">
+                <a href="./index.html" class="-m-1.5 p-1.5">
+                  <img src="./img/Logo-Morkull-Ragasts-Rage.png" alt="" class="drop-shadow-lg drop-shadow-fuchsia-500" />
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-white">
+                  <span class="sr-only">Close menu</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/20">
+                  <div class="space-y-2 py-6">
+                    <a href="./caracteristicas.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Características</a>
+                    <a href="./disastergames.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Sobre Disaster Games</a>
+                    <a href="./comprar.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Comprar</a>
+                  </div>
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </header>
+
+    <main>
+
+        <!--
+      <section class="flex flex-col items-center p-6">
+        <div class="text-center p-6">
+          <h2 class="text-white text-5xl font-bold">
+            Características
+          </h2>
+        </div>
+
+        <div class="text-center">
+          <p class="text-white">
+            Morkull Ragast’s Rage es un videojuego en 2D que combina plataformas y acción con toques de exploración. Además, repleto de referencias a la cultura actual y con un personaje que podrá tomarse la libertad de hablar con el jugador mientras va escapando y luchando contra enemigos.
+
+            Arte y animación: Morkull Ragast’s Rage está completamente dibujado y animado a mano, frame por frame. Inspirado e influenciado por películas tradicionales de animación y otros videojuegos en dos dimensiones, la animación tradicional dota a todo el elenco de personajes de gran naturalidad y vida en su interior.
+
+            Revienta la cuarta pared: Lo que hace especial al juego es el propio Morkull, su personalidad y su carácter, junto a esa rotura de la cuarta pared que le permite hablar con los jugadores como si estuviese ahí mismo.
+
+            Hemos dotado a Morkull de gran carisma y personalidad, generando constantemente un ambiente desenfadado, cargado de constante humor, chistes malos y referencias a la cultura pop.
+
+            Sistema de combate: Contarás con tus propias manos y todo el poder que supone ser el Dios de la muerte y la oscuridad, claro… Además de una amplia selección de combos y habilidades que te permitirán abrirte paso por los más recónditos rincones del Ragast.
+          </p>
+        </div>
+
+      </section>
+    -->
+
+    </main>
+
+    <footer class="flex justify-evenly items-center p-6">
+      <div>
+        <a href="./disastergames.html"><img class="w-30 drop-shadow-lg drop-shadow-fuchsia-500" src="./img/Logo-Disaster-Games.png" alt="Logo Disaster Games"></a>
+      </div>
+
+      <div>
+        <p class="text-white">
+          Todos los derechos reservados © 2024 Disaster Games S.L.
+        </p>
+      </div>
+
+      <div>
+        <img class="w-50 drop-shadow-lg drop-shadow-fuchsia-500" src="./img/Logo-Selecta-Play.avif" alt="Logo Selecta Play">
+      </div>
+
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
