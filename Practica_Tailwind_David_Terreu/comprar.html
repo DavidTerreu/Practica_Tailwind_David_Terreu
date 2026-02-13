@@ -10,14 +10,14 @@
 
     <header>
       <nav aria-label="Global" class="mx-auto flex max-w-8xl items-center justify-between p-6">
-        <div class="flex lg:flex-1">
+        <div class="flex shrink-0 menu:flex-1">
           <a href="./index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img src="./img/Logo-Morkull-Ragasts-Rage.png" class="h-20 drop-shadow-lg drop-shadow-fuchsia-500" />
+            <img src="./img/Logo-Morkull-Ragasts-Rage.png" class="h-20 w-auto drop-shadow-lg drop-shadow-fuchsia-500" />
           </a>
         </div>
 
-        <div class="flex lg:hidden">
+        <div class="flex menu:hidden">
           <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Open main menu</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6 text-white">
@@ -26,17 +26,17 @@
           </button>
         </div>
 
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="./caracteristicas.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Características</a>
-          <a href="./disastergames.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Sobre Disaster Games</a>
-          <a href="./comprar.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Comprar</a>
+        <div class="hidden menu:flex menu:gap-x-12">
+          <a href="./caracteristicas.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 transition whitespace-nowrap">Características</a>
+          <a href="./disastergames.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 transition whitespace-nowrap">Sobre Disaster Games</a>
+          <a href="./comprar.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 transition whitespace-nowrap">Comprar</a>
         </div>
 
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
+        <div class="hidden menu:flex menu:flex-1 menu:justify-end"></div>
       </nav>
 
       <el-dialog>
-        <dialog id="mobile-menu" class="backdrop:bg-black/50 lg:hidden">
+        <dialog id="mobile-menu" class="backdrop:bg-black/50 menu:hidden">
           <div tabindex="0" class="fixed inset-0 focus:outline-none">
             <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-fuchsia-900 p-6 sm:max-w-sm ring-1 ring-white/10">
               <div class="flex items-center justify-between">
@@ -53,9 +53,9 @@
               <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/20">
                   <div class="space-y-2 py-6">
-                    <a href="./caracteristicas.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Características</a>
-                    <a href="./disastergames.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Sobre Disaster Games</a>
-                    <a href="./comprar.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Comprar</a>
+                    <a href="./caracteristicas.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-gray-800">Características</a>
+                    <a href="./disastergames.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-gray-800">Sobre Disaster Games</a>
+                    <a href="./comprar.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-gray-800">Comprar</a>
                   </div>
                 </div>
               </div>
