@@ -11,69 +11,51 @@
     <header>
       <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="./index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
             <img src="./img/Logo-Morkull-Ragasts-Rage.png" class="h-20 drop-shadow-lg drop-shadow-fuchsia-500" />
           </a>
         </div>
+
         <div class="flex lg:hidden">
           <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
             <span class="sr-only">Open main menu</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 text-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6 text-white">
               <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
         </div>
+
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Características</a> 
-          <a href="#" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Sobre Disaster Games</a>
-          <a href="#" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Comprar</a>
+          <a href="./caracteristicas.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Características</a>
+          <a href="./disastergames.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Sobre Disaster Games</a>
+          <a href="./comprar.html" class="text-sm/6 font-semibold text-white hover:text-fuchsia-500 transition">Comprar</a>
         </div>
 
         <div class="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
+
       <el-dialog>
-        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <dialog id="mobile-menu" class="backdrop:bg-black/50 lg:hidden">
           <div tabindex="0" class="fixed inset-0 focus:outline-none">
-            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-fuchsia-900 p-6 sm:max-w-sm ring-1 ring-white/10">
               <div class="flex items-center justify-between">
-                <a href="#" class="-m-1.5 p-1.5">
-                  <span class="sr-only">Your Company</span>
-                  <img src="./img/Logo-Morkull-Ragasts-Rage.png" alt="" class="h-20-auto drop-shadow-lg drop-shadow-fuchsia-500" />
+                <a href="./index.html" class="-m-1.5 p-1.5">
+                  <img src="./img/Logo-Morkull-Ragasts-Rage.png" alt="" class="drop-shadow-lg drop-shadow-fuchsia-500" />
                 </a>
-                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-white">
                   <span class="sr-only">Close menu</span>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6">
                     <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                 </button>
               </div>
               <div class="mt-6 flow-root">
-                <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="-my-6 divide-y divide-gray-500/20">
                   <div class="space-y-2 py-6">
-                    <div class="-mx-3">
-                      <button type="button" command="--toggle" commandfor="products" class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                        Product
-                        <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 flex-none in-aria-expanded:rotate-180">
-                          <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
-                        </svg>
-                      </button>
-                      <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Analytics</a>
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Engagement</a>
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Security</a>
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Integrations</a>
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Automations</a>
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Watch demo</a>
-                        <a href="#" class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Contact sales</a>
-                      </el-disclosure>
-                    </div>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
-                  </div>
-                  <div class="py-6">
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                    <a href="./caracteristicas.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Características</a>
+                    <a href="./disastergames.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Sobre Disaster Games</a>
+                    <a href="./comprar.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -83,49 +65,45 @@
       </el-dialog>
     </header>
 
-    <!--<header>
-
-      <nav class="flex justify-between items-center p-4 text-white">
-        <div>
-          <img class="w-3xs drop-shadow-lg drop-shadow-fuchsia-500" src="./img/Logo-Morkull-Ragasts-Rage.png" alt="Logo Morkull Ragasts Rage">
-        </div>
-        <ul class="flex w-full justify-evenly">
-          <li>
-            <a class="bg-fuchsia-900 p-4 rounded-xl border-2 border-indigo-50" href="">Características</a>
-          </li>
-
-          <li>
-            <a class="bg-fuchsia-900 p-4 rounded-xl border-2 border-indigo-50" href="">Sobre Disaster Games</a>
-          </li>
-
-          <li>
-            <a class="bg-fuchsia-900 p-4 rounded-xl border-2 border-indigo-50" href=""> Comprar</a>
-          </li>
-        </ul>
-      </nav>
-
-    </header>-->
-
     <main>
-      <h1 class="text-3xl font-bold bg-indigo-600">
-        Hello world!
-      </h1>
+
+      <section>
+        <img class="bg-center" src="./img/cabecera-morkull.jpg" alt="Cabecera Morkull">
+
+      </section>
+
+      <section class="flex flex-col items-center p-6">
+        <div class="text-center p-6">
+          <h2 class="text-white">
+            Sinopsis
+          </h2>
+        </div>
+
+        <div class="text-center">
+          <p class="text-white">
+            Prepárate para jugar como Morkull, el villano de esta historia, quien posee un conocimiento inusual… Sabe que es un personaje de un videojuego. También sabe que existe un jugador que lo controla (es decir, tú) y que hay desarrolladores que lo han creado.
+
+            ¿Tu objetivo? Ayudar a Morkull a escapar de Ragast para que pueda conquistar el mundo y llevar a cabo sus malvados planes.
+          </p>
+        </div>
+
+      </section>
 
     </main>
 
-    <footer class="flex">
+    <footer class="flex justify-evenly items-center p-6">
       <div>
-        <img class="w-md" src="./img/Logo-Disaster-Games.png" alt="Logo Disaster Games">
+        <a href="./index.html"><img class="w-30 drop-shadow-lg drop-shadow-fuchsia-500" src="./img/Logo-Disaster-Games.png" alt="Logo Disaster Games"></a>
       </div>
 
       <div>
-        <p>
+        <p class="text-white">
           Todos los derechos reservados © 2024 Disaster Games S.L.
         </p>
       </div>
 
       <div>
-        <img class="w-md" src="./img/Logo-Selecta-Play.avif" alt="Logo Selecta Play">
+        <img class="w-50 drop-shadow-lg drop-shadow-fuchsia-500" src="./img/Logo-Selecta-Play.avif" alt="Logo Selecta Play">
       </div>
 
     </footer>
