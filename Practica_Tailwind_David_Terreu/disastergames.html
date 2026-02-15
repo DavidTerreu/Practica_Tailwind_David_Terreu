@@ -8,6 +8,7 @@
   </head>
   <body class="bg-morao-500 font-winky">
 
+    <!-- HEADER -->
     <header class="bg-morao-900">
       <nav aria-label="Global" class="mx-auto flex max-w-8xl items-center justify-between p-6">
         <div class="flex shrink-0 menu:flex-1">
@@ -27,9 +28,9 @@
         </div>
 
         <div class="hidden menu:flex menu:gap-x-12">
-          <a href="./caracteristicas.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 hover:scale-145 transition whitespace-nowrap focus:text-fuchsia-300 focus:underline focus:outline-none transition">Características</a>
-          <a href="./disastergames.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 hover:scale-125 transition whitespace-nowrap focus:text-fuchsia-300 focus:underline focus:outline-none transition">Sobre Disaster Games</a>
-          <a href="./comprar.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 hover:scale-145 transition whitespace-nowrap focus:text-fuchsia-300 focus:underline focus:outline-none transition">Comprar</a>
+          <a href="./caracteristicas.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 hover:scale-145 transition whitespace-nowrap focus:text-fuchsia-300 focus:underline focus:outline-none transition font-pirata">Características</a>
+          <a href="./disastergames.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 hover:scale-125 transition whitespace-nowrap focus:text-fuchsia-300 focus:underline focus:outline-none transition font-pirata">Sobre Disaster Games</a>
+          <a href="./comprar.html" class="text-3xl font-semibold text-white hover:text-fuchsia-500 hover:scale-145 transition whitespace-nowrap focus:text-fuchsia-300 focus:underline focus:outline-none transition font-pirata">Comprar</a>
         </div>
 
         <div class="hidden menu:flex menu:flex-1 menu:justify-end"></div>
@@ -53,9 +54,9 @@
               <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/20">
                   <div class="space-y-2 py-6">
-                    <a href="./caracteristicas.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-fuchsia-700 focus:bg-fuchsia-700 focus:px-2 focus:rounded focus:outline-none transition-all whitespace-nowrap">Características</a>
-                    <a href="./disastergames.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-fuchsia-700 focus:bg-fuchsia-700 focus:px-2 focus:rounded focus:outline-none transition-all whitespace-nowrap">Sobre Disaster Games</a>
-                    <a href="./comprar.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-fuchsia-700 focus:bg-fuchsia-700 focus:px-2 focus:rounded focus:outline-none transition-all whitespace-nowrap">Comprar</a>
+                    <a href="./caracteristicas.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-fuchsia-700 focus:bg-fuchsia-700 focus:px-2 focus:rounded focus:outline-none transition-all whitespace-nowrap font-pirata">Características</a>
+                    <a href="./disastergames.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-fuchsia-700 focus:bg-fuchsia-700 focus:px-2 focus:rounded focus:outline-none transition-all whitespace-nowrap font-pirata">Sobre Disaster Games</a>
+                    <a href="./comprar.html" class="-mx-3 block rounded-lg px-3 py-2 text-2xl font-semibold text-white hover:bg-fuchsia-700 focus:bg-fuchsia-700 focus:px-2 focus:rounded focus:outline-none transition-all whitespace-nowrap font-pirata">Comprar</a>
                   </div>
                 </div>
               </div>
@@ -65,11 +66,13 @@
       </el-dialog>
     </header>
 
+    <!-- MAIN -->
     <main>
 
+      <!-- Una única sección con el logo de la compañía y una leve descripción de la misma junto a los enlaces a sus redes sociales -->
         <section class="flex flex-col items-center p-6 w-full max-w-7xl mx-auto">
         <div class="text-center w-full mb-6">
-            <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold font-pirata my-5">
             DISASTER GAMES
             </h2>
         </div>
@@ -82,8 +85,28 @@
             ¿Tu objetivo? Ayudar a Morkull a escapar de Ragast para que pueda conquistar el mundo y llevar a cabo sus malvados planes.
             </p>
         </div>
+
+        <div class="flex justify-center items-center text-center text-white w-full p-6">
+                
+          <div class="min-w-20 flex-1 max-w-30 flex justify-center items-center bg-gray-500 p-1 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-gray-600 focus-within:ring-4 focus-within:ring-gray-300 mx-2">
+              <img class="w-8" src="./img/twitterx-logo.png" alt="X">
+              <a href="https://x.com/DisasterGames">X</a>
+          </div>
+          
+          <div class="min-w-20 flex-1 max-w-30 flex justify-center items-center bg-fuchsia-700 p-1 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-fuchsia-800 focus-within:ring-4 focus-within:ring-fuchsia-500 mx-2">
+              <img class="w-8" src="./img/instagram-logo.png" alt="Instagram">
+              <a href="https://www.instagram.com/disastergames/">Instagram</a>
+          </div>
+
+          <div class="min-w-20 flex-1 max-w-30 flex justify-center items-center bg-red-500 p-1 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg     hover:shadow-red-600 focus-within:ring-4 focus-within:ring-red-300 mx-2">
+            <img class="w-8" src="./img/youtube-logo.png" alt="YouTube">
+            <a href="https://www.youtube.com/@DisasterGames_">YouTube</a>
+          </div>
+          
+        </div>
         </section>
 
+    <!-- FOOTER -->
     <footer class="flex justify-evenly items-center p-6 bg-morao-900">
       <div>
         <a href="./disastergames.html"><img class="w-30 drop-shadow-lg drop-shadow-morao-100 hover:scale-105 transition hover:drop-shadow-morao-100" src="./img/Logo-Disaster-Games.png" alt="Logo Disaster Games"></a>

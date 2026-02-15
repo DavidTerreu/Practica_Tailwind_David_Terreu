@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jockey+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jockey+One&family=Pirata+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
+/*Variables para los 3 colores de morado que son personalizados, las fuentes (de títulos y texto) y el breakpint del menú hamburguesa*/
 @theme {
   --color-morao-100: rgb(255 20 200);
   --color-morao-500: rgb(115 30 115);
   --color-morao-900: rgb(80 15 80);
   --font-winky: "Winky Rough", sans-serif;
+  --font-pirata: "Pirata One", serif;
   --breakpoint-menu: 1090px;
 }
