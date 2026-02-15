@@ -2,7 +2,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-mint-500: oklch(0.72 0.11 178);
+  --color-morao-100: rgb(255 20 200);
+  --color-morao-500: rgb(115 30 115);
+  --color-morao-900: rgb(80 15 80);
   --font-winky: "Winky Rough", sans-serif;
   --breakpoint-menu: 1090px;
 }
